@@ -1,6 +1,8 @@
 import Button from "./Button";
 import { render, screen } from "@testing-library/react";
+import { ThemeProvider } from "styled-components";
 import { vi } from "vitest";
+import theme from "../../styles/theme";
 
 describe("Given the Button component", () => {
   describe("When it receives the text 'RANDOM", () => {
@@ -8,7 +10,11 @@ describe("Given the Button component", () => {
       const buttonAction = vi.fn();
       const buttonText = "RANDOM";
 
-      render(<Button actionOnClick={buttonAction} text={buttonText} />);
+      render(
+        <ThemeProvider theme={theme}>
+          <Button actionOnClick={buttonAction} text={buttonText} />
+        </ThemeProvider>
+      );
 
       const expectedButton = screen.getByRole("button", {
         name: buttonText,
