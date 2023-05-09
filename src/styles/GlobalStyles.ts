@@ -1,3 +1,7 @@
+import { createGlobalStyle } from "styled-components";
+
+const GlobalStyles = createGlobalStyle`
+
 *,
 ::before,
 ::after {
@@ -46,3 +50,7 @@ input {
 a {
   all: unset;
 }
+
+`;
+
+export default GlobalStyles;
