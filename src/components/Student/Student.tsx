@@ -13,7 +13,7 @@ const Student = ({
     <div key={student} className="student">
       <img
         className={`student-images${
-          studentsWithLargerImage.includes(student) && " too-Large-To-Fit"
+          studentsWithLargerImage.includes(student) && " too-large-to-fit"
         }`}
         src={`assets/images/students-photos/${student}.png`}
         alt={`student ${studentName}`}
