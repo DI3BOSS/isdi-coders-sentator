@@ -1,3 +1,4 @@
+import Image from "../Image/Image";
 import StudentStyled from "./StudentStyled";
 
 interface StudentProps {
@@ -13,7 +14,7 @@ const Student = ({
 
   return (
     <StudentStyled key={student}>
-      <img
+      <Image
         className={`student-images${
           studentsWithLargerImage.includes(student) && " too-large-to-fit"
         }`}

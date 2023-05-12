@@ -1,4 +1,5 @@
 import Button from "../Button/Button";
+import Image from "../Image/Image";
 import HeaderStyled from "./HeaderStyled";
 
 interface HeaderProps {
@@ -7,7 +8,7 @@ interface HeaderProps {
 const Header = ({ shuffle }: HeaderProps) => {
   return (
     <HeaderStyled>
-      <img
+      <Image
         className="isdi-logo"
         src="/assets/images/isdi-logo.webp"
         alt="ISDI Coders logo"
