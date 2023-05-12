@@ -10,7 +10,7 @@ const StudentStyled = styled.div.attrs({ className: "student" })`
   width: 90px;
   height: 90px;
   border-radius: 50px;
-  border: 1px solid ${(props) => props.theme.colors.black};
+  border: 1px solid ${({ theme }) => theme.colors.black};
 
   &-image {
     height: 90px;

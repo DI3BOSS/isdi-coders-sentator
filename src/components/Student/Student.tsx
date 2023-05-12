@@ -1,3 +1,6 @@
+import Image from "../Image/Image";
+import StudentStyled from "./StudentStyled";
+
 interface StudentProps {
   student: string;
   studentsWithLargerImage: string;
@@ -10,15 +13,15 @@ const Student = ({
   const studentName = student.replace(/-/g, " ");
 
   return (
-    <div key={student} className="student">
-      <img
+    <StudentStyled key={student}>
+      <Image
         className={`student-images${
           studentsWithLargerImage.includes(student) && " too-large-to-fit"
         }`}
         src={`assets/images/students-photos/${student}.png`}
         alt={`student ${studentName}`}
       />
-    </div>
+    </StudentStyled>
   );
 };
 export default Student;
