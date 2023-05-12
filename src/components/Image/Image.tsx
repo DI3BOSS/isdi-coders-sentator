@@ -1,3 +1,5 @@
+import ImageStyled from "./ImageStyled";
+
 interface ImageProps {
   className?: string;
   src: string;
@@ -5,6 +7,6 @@ interface ImageProps {
 }
 
 const Image = ({ className, src, alt }: ImageProps): JSX.Element => {
-  return <img className={className} src={src} alt={alt} />;
+  return <ImageStyled className={className} src={src} alt={alt} />;
 };
 export default Image;

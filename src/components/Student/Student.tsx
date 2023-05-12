@@ -15,7 +15,7 @@ const Student = ({
   return (
     <StudentStyled key={student}>
       <Image
-        className={`student-images${
+        className={`student-image${
           studentsWithLargerImage.includes(student) && " too-large-to-fit"
         }`}
         src={`assets/images/students-photos/${student}.png`}
