@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyles = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
 
 *,
 ::before,
@@ -53,4 +53,4 @@ a {
 
 `;
 
-export default GlobalStyles;
+export default GlobalStyle;
